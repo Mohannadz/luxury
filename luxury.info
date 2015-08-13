@@ -1,43 +1,32 @@
 core = 7.x
-description = Arabia weddings custom theme.
+description = Arabia weddings luxury theme.
 engine = phptemplate
-name = Arabia Weddings
+name = Arabia Weddings luxury
 
 ; Regions =====================================================================
 
 regions[content] = Content
 regions[search] = Search
 regions[main_menu] = Main Menu
-regions[sidebar] = Sidebar
-regions[deals_sidebar] = Deals Sidebar
 regions[language_switcher] = Language Switcher
 regions[footer_menu_1] = Footer Menu 1
 regions[footer_menu_2] = Footer Menu 2
 regions[footer_menu_3] = Footer Menu 3
 regions[footer_menu_4] = Footer Menu 4
-regions[character] = Character
-regions[home_killer] = Home Killer Banner
-regions[home_under_killer_1] = Home Under Killer Banner 1
-regions[home_under_killer_2] = Home Under Killer Banner 2
-regions[home_directory] = Home Directory
-regions[home_timeline] = Home Timeline
-regions[newsletter_footer] = Newsletter Footer
 regions[leaderboard] = Leaderboard
-regions[registration_msg] = Registration Message
 regions[killer] = Killer Banner
 
 ; Stylesheets =================================================================
 
+stylesheets[screen][] = css/style.css
 
-scripts[] = scripts/jquery.rwdImageMaps.min.js
-scripts[] = scripts/jquery.grid-a-licious.min.js
-scripts[] = scripts/arabia.js
+scripts[] = scripts/script.js
 
 plugins[panels][layouts] = templates/panels/layouts
 
 ; Information added by drupal.org packaging script on 2011-09-21
 version = "7.x-1.0-beta1"
 core = "7.x"
-project = "arabia"
+project = "luxury"
 datestamp = "1316616407"
 
