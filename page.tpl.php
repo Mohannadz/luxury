@@ -1,47 +1,73 @@
+<div id="page-wrapper">
+	<div id="page" class="wrapper">
 
-  <div id="page-wrapper"><div id="page">
+  <div id="top-bar">
+    <div class="user-call-links hidden">
+    	<?php
+      	global $user;
+				if($user->uid){
+	    ?>
+          <div class="home-action-butons">
+                    <a class="call-to-action" href="<?php print url('user'); ?>"><?php print t('My Account'); ?></a>
+                    <a class="call-to-action" href="<?php print url('user/'.$user->uid.'/edit'); ?>"><?php print t('Edit'); ?></a>
+                    <a class="call-to-action" href="<?php print url('user/logout'); ?>"><?php print t('Logout'); ?></a>                    
+                    </div>   
+		<?php } else{ ?>
+        <div class="home-action-butons">
+		  <a class="call-to-action" href="<?php print url('user/register'); ?>"><?php print t('Register'); ?></a>
+          <a class="call-to-action" href="<?php print url('user/login'); ?>"><?php print t('Login'); ?></a>
+        </div>
+         <?php } ?>
+      </div>
+       
+    <div id="top-icons" class="right hidden">
+			<a id="follow-twitter" class="follow-icon" target="_blank" href="http://twitter.com/arabiaweddings">
+                    Follow us on Twitter</a>
+			<a id="follow-facebook" class="follow-icon" target="_blank" href="http://www.facebook.com/ArabiaWeddings">
+                    Our Facebook page</a>
+      <a id="follow-pinterest" class="follow-icon" target="_blank" href="http://pinterest.com/arabiaweddings">
+                    Pinterest</a>
+      <a id="follow-instagram" class="follow-icon" target="_blank" href="http://instagram.com/arabiaweddings">instagram</a>
+      <a id="follow-rss" class="follow-icon" target="_blank" href="/rss"> RSS Feed</a>
+         <?php print render($page['search']);?>
+	  </div>
+	</div>
+  
+	<div id="header">
+		
+    	<div id="logo">
+				<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"> <img src="<?php print $logo ?>" alt="<?php print $site_name;?>" title="<?php print $site_name;?>" /></a>
+			</div>
+      
+<div id="main_menu">
+				<?php
+				$s=array('class="menu"');
+				$r=array('class="mobile-menu"');
+				print str_replace($s,$r,render($page['main_menu']));?>
+                
+				<div class="clear"></div>
+			</div>
+	
+	</div>
+  <div id="lang" class="right hidden">
+            <?php print render($page['language_switcher']);?>
+			</div>
+  <div class="header-col-two">
+		<div class="logo_intro hidden"><?php print t('The #1 Online Wedding Planning Resource in the Middle East');?></div>
+            </div>
+            
+            <div class="clear"></div>
 
-    <div id="header"><div class="section clearfix">
+<div class="clear"></div>
 
-      <?php if ($logo): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-        </a>
-      <?php endif; ?>
+<div class="leader-board">
+<?php print render($page['leaderboard']);?>
+</div>
 
-      <?php if ($site_name || $site_slogan): ?>
-        <div id="name-and-slogan">
-          <?php if ($site_name): ?>
-            <?php if ($title): ?>
-              <div id="site-name"><strong>
-                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-              </strong></div>
-            <?php else: /* Use h1 when the content title is empty */ ?>
-              <h1 id="site-name">
-                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-              </h1>
-            <?php endif; ?>
-          <?php endif; ?>
-
-          <?php if ($site_slogan): ?>
-            <div id="site-slogan"><?php print $site_slogan; ?></div>
-          <?php endif; ?>
-        </div> <!-- /#name-and-slogan -->
-      <?php endif; ?>
-
-      <?php print render($page['header']); ?>
-
-    </div></div> <!-- /.section, /#header -->
-
-    <?php if ($main_menu || $secondary_menu): ?>
-      <div id="navigation"><div class="section">
-        <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Main menu'))); ?>
-        <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Secondary menu'))); ?>
-      </div></div> <!-- /.section, /#navigation -->
-    <?php endif; ?>
+<div class="clear"></div>
 
     <?php if ($breadcrumb): ?>
-      <div id="breadcrumb"><?php print $breadcrumb; ?></div>
+      <div id="breadcrumb" class="hidden"><?php print $breadcrumb; ?></div>
     <?php endif; ?>
 
     <?php print $messages; ?>
@@ -79,4 +105,5 @@
       <?php print render($page['footer']); ?>
     </div></div> <!-- /.section, /#footer -->
 
-  </div></div> <!-- /#page, /#page-wrapper -->
+  </div>
+</div> <!-- /#page, /#page-wrapper -->

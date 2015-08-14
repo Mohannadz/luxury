@@ -20,6 +20,7 @@ regions[killer] = Killer Banner
 
 stylesheets[screen][] = css/style.css
 
+scripts[] = scripts/jquery.grid-a-licious.min.js
 scripts[] = scripts/script.js
 
 plugins[panels][layouts] = templates/panels/layouts
