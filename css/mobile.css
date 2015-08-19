@@ -448,6 +448,12 @@ logo {
   clear: both;
   float:none;
 }
+.contest-voting .row .vote {
+  left: 0;
+}
+.contest-voting .row .title {
+  position: relative;
+}
 .contest-voting .row .fb-vote {
   position:relative;
 }

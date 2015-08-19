@@ -8,6 +8,7 @@ name = Arabia Weddings luxury
 regions[content] = Content
 regions[search] = Search
 regions[main_menu] = Main Menu
+regions[nav_menu] = Nav Menu
 regions[language_switcher] = Language Switcher
 regions[footer_menu_1] = Footer Menu 1
 regions[footer_menu_2] = Footer Menu 2
