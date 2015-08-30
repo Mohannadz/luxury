@@ -167,8 +167,7 @@ a {text-decoration:none;}
 }
 
 #top-bar {
-  background: #dbc6b5 none repeat scroll 0 0;
-  border-bottom: 1px dashed #c8ab96;
+  background: #fda5bb none repeat scroll 0 0;
   overflow: hidden;
   padding: 10px;
 }
@@ -278,7 +277,7 @@ a {text-decoration:none;}
 #main_menu ul li {
   float: left;
   list-style: outside none none;
-  padding: 0;
+  padding: 0 3px 0 0;
 }
 #main_menu li a {
   color: #333;
@@ -287,21 +286,20 @@ a {text-decoration:none;}
   padding: 5px 10px;
   text-decoration: none;
 }
-#main_menu li a:hover {
-  background: #dbc6b5 none repeat scroll 0 0;
+#main_menu li a:hover, #main_menu li a.active-trail {
+  background: #fda5bb none repeat scroll 0 0;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   color: #fff;
 }
 
 #nav-bar {
-  background: #dbc6b5 none repeat scroll 0 0;
+  background: #fda5bb none repeat scroll 0 0;
   margin-bottom: 5px;
   overflow: hidden;
 }
-
 ul.nice-menu li {
-  background-color: #dbc6b5;
+  background-color: #fda5bb;
 }
 ul.nice-menu a {
   color: #fff;
@@ -309,7 +307,7 @@ ul.nice-menu a {
   padding: 7px 10px;
 }
 ul.nice-menu-down li.menuparent {
-  background-color: #dbc6b5;
+  background-color: #fda5bb;
 }
 
 .leader-board {
@@ -317,12 +315,23 @@ ul.nice-menu-down li.menuparent {
 }
 #page-title {
   clear: both;
-  color: #b98867;
+  color: #fda5bb;
   font-family: "Great Vibes",cursive;
   font-size: 28px;
   margin: 20px 0;
 }
-
+#breadcrumb {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #d2d2d2;
+  color: #909ea1;
+  padding: 10px 5px;
+}
+#breadcrumb .breadcrumb {
+  padding: 0;
+}
+#breadcrumb .breadcrumb a {
+  color: #333;
+}
 
 /*  Inner Pages  */
 #inner{}
@@ -336,12 +345,44 @@ ul.nice-menu-down li.menuparent {
   width: 300px;
 }
 
+/*  Main section  */
+
+.intro-img {
+  clear: both;
+  margin-top: 3px;
+}
+.content-leaderboard {
+  margin: 15px auto 0;
+  overflow: hidden;
+  width: 728px;
+}
+.intro {
+  margin: 15px auto;
+  overflow: hidden;
+  width: 728px;
+}
+.intro-text {
+  float: left;
+  width: 410px;
+}
+.killer {
+  float: right;
+  width: 300px;
+}
+.categories {}
+.categories .row {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+.categories .row.last {
+  margin: 0px;
+}
 
 /*  Celebrity section  */
 .celebrity-list-data {
   background: #fff none repeat scroll 0 0;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  margin: 15px;
+  margin: 15px 0;
   padding: 5px 10px;
 }
 .celebrity-list-data .row .label {
@@ -359,4 +400,83 @@ ul.nice-menu-down li.menuparent {
 	border-bottom: none;
 	margin-bottom: 0;	
 	padding-bottom: 0;
+}
+
+/*  Listing Images  */
+.listing-images {}
+.listing-images .item { position:relative;}
+.listing-images .item .title {
+  margin: 1px 0 20px;
+}
+.listing-images .item .title a {
+  color: #000;
+  font-size: 18px;
+}
+.listing-images .item img{}
+
+
+/*  Pagger  */
+.item-list {}
+.item-list .pager {}
+.item-list .pager li {
+  margin: 0 5px 0 0;
+  padding: 0;
+}
+.item-list .pager li a {
+  background: #dbc6b5 none repeat scroll 0 0;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 700;
+  padding: 6px 15px;
+}
+.item-list .pager li a:hover {
+  background: #f2d9c6 none repeat scroll 0 0;
+}
+.item-list .pager li.pager-current {
+  background: #f2d9c6 none repeat scroll 0 0;
+  border-radius: 3px;
+  color: #987358;
+  font-weight: 400;
+  padding: 6px 15px;
+}
+
+
+
+/*  Footer  */
+footer {
+  background: #fff none repeat scroll 0 0;
+  float: left;
+  margin-top: 30px;
+  padding-top: 30px;
+  width: 100%;
+}
+footer .footer_item {
+  float: left;
+  margin-right: 4%;
+  width: 22%;
+}
+footer .footer_item.last{ margin:0;}
+footer .footer_item ul{}
+footer .footer_item ul li {
+  list-style: outside none none;
+  margin: 0 0 10px;
+  padding: 0;
+}
+footer .footer_item ul li a {
+  color: #909ea1;
+  font-size: 15px;
+}
+footer .footer_item ul li a:hover {
+  color: #B3B3B3;
+}
+.footer-message {
+  background: #f8f8f8 none repeat scroll 0 0;
+  float: left;
+  margin: 15px 0;
+  width: 100%;
+}
+.footer-message span {
+  color: #929d9f;
+  display: block;
+  text-align: center;
 }
