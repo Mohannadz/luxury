@@ -141,18 +141,21 @@ body {
   background: #f8f8f8;
   color: #000000;
   font-family: Arial,Helvetica,sans-serif;
-  font-size: 12px;
+  font-size: 14px;
 }
 .wrapper {
   margin: 0 auto;
   width: 980px;
 }
-
 .hidden{visibility: hidden; display: none;}
 .clear {clear: both;}
 .right {float: right;}
 .left {float: left;}
-a {text-decoration:none;}
+.centered {
+  margin: 0 auto;
+  text-align: center;
+}
+a {text-decoration:none;color:#E60083;}
 #page-wrapper{}
 #page{position:relative;}
 
@@ -160,35 +163,47 @@ a {text-decoration:none;}
 
 /*       Header         */
 #header {
-  border-bottom: 1px solid #dbc6b5;
-  margin-bottom: 2px;
+  border-bottom: 1px solid #e3e3e3;
+  margin: 15px 0 2px;
   overflow: hidden;
   width: 100%;
 }
 
 #top-bar {
-  background: #fda5bb none repeat scroll 0 0;
+  background: #fff none repeat scroll 0 0;
+  border-bottom: 1px solid #f3c5c5;
   overflow: hidden;
-  padding: 10px;
+  padding: 8px;
 }
 #top-bar .collect {
-  color: #fff;
+  color: #000;
   font-size: 14px;
   font-weight: 700;
+  margin-top: 8px;
 }
 #top-bar .collect a {
-  background: #9f9f9f none repeat scroll 0 0;
-  border-radius: 5px;
+  background: #2bcbc9 none repeat scroll 0 0;
+  border-radius: 4px;
   color: #ffffff;
-  padding: 5px 8px;
+  margin: 0 0 0 10px;
+  padding: 10px 20px;
   text-decoration: none;
 }
 #top-bar .collect a:hover{ background: #5f5f5f none repeat scroll 0 0;}
+
+.home-action-butons {
+  margin-top: 8px;
+}
+.home-action-butons a {
+  color: #000;
+  margin-left: 20px;
+}
+
 #top-icons {
   margin-top: 2px;
   position: absolute;
-  right: 273px;
-  top: 0;
+  right: 0;
+  top: 30px;
 }
 #top-icons .region-search {
   float: left;
@@ -232,52 +247,63 @@ a {text-decoration:none;}
 #top-icons #edit-actions, #top-icons #edit-actions--2{
   display:none;
 }
+
+.search-box {
+  float: right;
+	position: relative;
+}
 #block-search-form input[type="text"] {
-  background: url("../images/sripte.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-  border: medium none;
-  border-radius: 10em;
-  color: rgba(0, 0, 0, 0);
-  cursor: pointer;
+  background: #f9f9f9 none repeat scroll 0 0;
+  border: 1px solid #eaa8b4;
+  border-radius: 3px;
+  color: #999;
   height: 34px;
   margin: 0;
-  padding: 0;
-  transition: all 0.5s ease 0s;
-  width: 34px;
+  padding: 0 10px;
+  width: 175px;
 }
-#block-search-form input[type="text"]:focus {
-  background-color: #FFFFFF;
-  color: #333;
-  cursor: auto;
-  padding-left: 40px;
-  width: 130px;
-}
-#block-search-form input[type=text]:hover {
-	background-color: #fff;
+#block-search-form #edit-submit.form-submit {
+  background: rgba(0, 0, 0, 0) url("http://assets.arabiaweddings.com/sites/default/files/uploads/2015/09/04/search.png") no-repeat scroll 0 0;
+  border: 0 none;
+  font-size: 0;
+  height: 22px;
+  position: absolute;
+  right: 4px;
+  top: 5px;
+  width: 27px;
 }
 
+#lang {
+	margin-left: 20px;
+	margin-top: 8px;	
+}
 #lang .active {
   display: none;
   visibility: hidden;
 }
 #lang a {
-  color: #ffffff;
-  font-family: tahoma;
+  color: #000;
   font-size: 16px;
   font-weight: bold;
 }
+
 #logo {
   float: left;
 }
 
 #main_menu {
   float: right;
-  margin-top: 64px;
+  margin-top: 47px;
 }
 #main_menu ul{}
 #main_menu ul li {
   float: left;
   list-style: outside none none;
   padding: 0 3px 0 0;
+}
+#main_menu ul li:last-child {
+  margin-left: 25px;
+  padding: 0;
 }
 #main_menu li a {
   color: #333;
@@ -287,19 +313,19 @@ a {text-decoration:none;}
   text-decoration: none;
 }
 #main_menu li a:hover, #main_menu li a.active-trail {
-  background: #fda5bb none repeat scroll 0 0;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  color: #fff;
+  color: #e60083;
 }
 
 #nav-bar {
   background: #fda5bb none repeat scroll 0 0;
-  margin-bottom: 5px;
-  overflow: hidden;
+  float: left;
+  margin-bottom: 1px;
+  width: 100%;
 }
 ul.nice-menu li {
   background-color: #fda5bb;
+  border: medium none;
+  z-index: 999999999;
 }
 ul.nice-menu a {
   color: #fff;
@@ -307,7 +333,7 @@ ul.nice-menu a {
   padding: 7px 10px;
 }
 ul.nice-menu-down li.menuparent {
-  background-color: #fda5bb;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
 }
 
 .leader-board {
@@ -324,6 +350,8 @@ ul.nice-menu-down li.menuparent {
   background: #fff none repeat scroll 0 0;
   border: 1px solid #d2d2d2;
   color: #909ea1;
+  font-size: 12px;
+  margin-bottom: 5px;
   padding: 10px 5px;
 }
 #breadcrumb .breadcrumb {
@@ -350,7 +378,32 @@ ul.nice-menu-down li.menuparent {
 .intro-img {
   clear: both;
   margin-top: 3px;
+  position: relative;
 }
+.intro-img .outer, .categories .outer {
+  border: 1px solid #fff;
+  bottom: 25px;
+  left: 50%;
+  margin-left: -120px;
+  padding: 5px;
+  position: absolute;
+  text-align: center;
+  width: 240px;
+}
+.intro-img .outer .inner, .categories .outer .inner {
+  background: #fff none repeat scroll 0 0;
+  padding: 10px 20px;
+}
+.intro-img .outer .inner h2, .categories .outer .inner h2 {
+  color: #fda5bb;
+  font-family: "Great Vibes",cursive;
+  font-size: 30px;
+}
+.intro-img .outer .inner span, .categories .outer .inner span {
+  color: #000;
+  font-size: 18px;
+}
+
 .content-leaderboard {
   margin: 15px auto 0;
   overflow: hidden;
@@ -362,17 +415,48 @@ ul.nice-menu-down li.menuparent {
   width: 728px;
 }
 .intro-text {
+  background: rgba(0, 0, 0, 0) url("http://assets.arabiaweddings.com/sites/default/files/uploads/2015/09/01/welcome.jpg") repeat scroll 0 0;
   float: left;
+  padding: 10px;
+  text-align: center;
   width: 410px;
 }
-.killer {
-  float: right;
-  width: 300px;
+.intro-text .inner {
+  background: #fff none repeat scroll 0 0;
+  padding: 10px;
 }
+.intro-text .inner span {
+  color: #fda5bb;
+  font-family: "Great Vibes",cursive;
+  font-size: 27px;
+}
+.intro-text .inner p {
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+.killer {
+  background: rgba(0, 0, 0, 0) url("http://assets.arabiaweddings.com/sites/default/files/uploads/2015/09/03/killer-bg.png") repeat scroll center center;
+  float: right;
+  margin-bottom: 15px;
+  padding: 9px;
+  width: 318px;
+}
+.front-killer { float: right; width:300px;}
+
 .categories {}
 .categories .row {
   float: left;
-  margin: 0 20px 20px 0;
+  margin: 0 2% 20px 0;
+  position: relative;
+  width: 32%;
+}
+.categories .row img {
+	transform: scale(1);
+	transition: all 0.35s ease-in-out 0s;
+}
+.categories .row img:hover {
+	transform: scale(1.05);
 }
 .categories .row.last {
   margin: 0px;
@@ -382,19 +466,20 @@ ul.nice-menu-down li.menuparent {
 .celebrity-list-data {
   background: #fff none repeat scroll 0 0;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  margin: 15px 0;
+  clear: both;
+  margin: 15px 0 15px -18px;
   padding: 5px 10px;
 }
 .celebrity-list-data .row .label {
-  color: #b27c55;
   display: block;
-  margin-bottom: 10px;
 }
 .celebrity-list-data .row {
   border-bottom: 1px solid #eeeeee;
-	font-size:14px;
+  font-size: 14px;
+  line-height: 20px;
   margin: 10px 0;
   padding: 10px 0;
+  text-align: justify;
 }
 .celebrity-list-data .row:last-child{
 	border-bottom: none;
@@ -402,17 +487,89 @@ ul.nice-menu-down li.menuparent {
 	padding-bottom: 0;
 }
 
-/*  Listing Images  */
-.listing-images {}
-.listing-images .item { position:relative;}
-.listing-images .item .title {
+/*  Gallery  */
+.gallery .item {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0 2px 0 rgba(31, 31, 31, 0.07);
+  padding: 0;
+  position: relative;
+	overflow: hidden;
+}
+.gallery .item:hover {
+  opacity: 0.9 !important;
+}
+.gallery .item .title {
   margin: 1px 0 20px;
+  padding: 10px;
+  text-align: center;
 }
-.listing-images .item .title a {
+.gallery .item .category {
+  margin-top: 15px;
+  text-align: center;
+}
+.gallery .item img {
+	transform: scale(1);
+	transition: all 0.35s ease-in-out 0s;}
+.gallery .item img:hover {
+	transform: scale(1.05);
+}
+
+.luxury-video {
+}
+.luxury-video .video {
+  margin-bottom: 15px;
+}
+
+#new-gallery {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.internal-tabs {
+  float: left;
+  margin-bottom: 10px;
+}
+.internal-tabs ul {}
+.internal-tabs ul li {
+  float: left;
+  margin-right: 20px;
+}
+.internal-tabs ul li a {
   color: #000;
-  font-size: 18px;
 }
-.listing-images .item img{}
+.internal-tabs ul li a:hover {
+  color: #e60083;
+}
+	
+	
+/*  Related Items  */
+.related-items {
+  clear: both;
+  float: left;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.related-items .title {
+  color: #fda5bb;
+  font-family: "Great Vibes",cursive;
+  font-size: 30px;
+}
+.related-items .row {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0 2px 0 rgba(31, 31, 31, 0.07);
+  float: left;
+  margin-right: 2%;
+  width: 32%;
+}
+.related-items .row:hover {
+  opacity: 0.9 !important;
+}
+.related-items .row.last{ margin:0;}
+.related-items .row .title {
+  font-family: arial;
+  font-size: 13px;
+  padding: 10px;
+  text-align: center;
+}
 
 
 /*  Pagger  */
@@ -423,23 +580,22 @@ ul.nice-menu-down li.menuparent {
   padding: 0;
 }
 .item-list .pager li a {
-  background: #dbc6b5 none repeat scroll 0 0;
+  background: #fda5bb none repeat scroll 0 0;
   border-radius: 3px;
   color: #fff;
   font-weight: 700;
   padding: 6px 15px;
 }
 .item-list .pager li a:hover {
-  background: #f2d9c6 none repeat scroll 0 0;
+  background: #ffcfdc none repeat scroll 0 0;
 }
 .item-list .pager li.pager-current {
-  background: #f2d9c6 none repeat scroll 0 0;
+  background: #ffcfdc none repeat scroll 0 0;
   border-radius: 3px;
-  color: #987358;
+  color: #a67280;
   font-weight: 400;
   padding: 6px 15px;
 }
-
 
 
 /*  Footer  */

@@ -1,5 +1,5 @@
 jQuery(document).ready(function(e) {
-	jQuery("#new-gallery").gridalicious({
+	jQuery(".grid-items1").gridalicious({
 		gutter: 15,
     width: 315,
     animate: true,
@@ -9,7 +9,7 @@ jQuery(document).ready(function(e) {
    	 },
 		});
 		
-		jQuery(".grid-items").gridalicious({
+		jQuery(".grid-items2").gridalicious({
 		gutter: 20,
     width: 430,
     animate: true,

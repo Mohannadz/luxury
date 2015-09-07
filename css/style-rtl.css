@@ -1,0 +1,104 @@
+@font-face{
+font-family: "Droid Arabic Kufi";
+src: url("../fonts/DroidKufi-Regular.ttf");
+}
+
+@font-face{
+font-family: "hor";
+src: url("../fonts/Hor.ttf");
+}
+body {
+  font-family: 'Droid Arabic Kufi',tahoma,Arial,sans-serif;
+}
+.left {
+  float: right;
+}
+.right {
+  float: left;
+}
+#top-bar .collect a {
+  margin: 0 10px 0 0;
+}
+#top-icons {
+  left: 0;
+	right: auto;
+}
+#lang {
+  margin-left: 0;
+  margin-right: 20px;
+}
+.home-action-butons a {
+  margin-left: 0;
+	margin-right: 20px
+}
+.home-action-butons a {
+	margin-left: 0;
+  margin-right: 20px;
+}
+.search-box {
+  float: left;
+}
+.follow-icon {
+  float: right;
+}
+#logo {
+  float: right;
+}
+#main_menu {
+  float: left;
+}
+#main_menu ul li {
+  float: right;
+  padding: 0 0 0 3px;
+}
+#main_menu ul li:last-child {
+  margin-left:0;
+  margin-right: 25px;
+}
+ul.nice-menu a {
+  color: #fff;
+  font-weight: 700;
+  padding: 7px;
+}
+#inner .inner-row .sidebar {
+  float: left;
+}
+.intro-text .inner p {
+  font-size: 15px;
+  line-height: 21px;
+}
+.intro-text {
+  float: right;
+}
+.killer {
+  float: left;
+}
+.front-killer {
+  float: left;
+}
+.categories .row {
+  float: right;
+  margin: 0 0 20px 2%;
+}
+.galcolumn {
+	float:right !important;
+	padding-left: 0 !important;
+	padding-right: 15px !important;
+}
+.celebrity-list-data {
+  margin: 15px -18px 15px 0;
+}
+.related-items .row {
+
+  float: right;
+  margin-right: 0;
+	margin-left: 2%;
+}
+.internal-tabs {
+  float: right;
+}
+.internal-tabs ul li {
+  float: right;
+  margin-left: 20px;
+	margin-right: 0;
+}

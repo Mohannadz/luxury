@@ -59,5 +59,4 @@
       <?php print $feed_icon; ?>
     </div>
   <?php endif; ?>
-
-</div><?php /* class view */ ?>
+</div>

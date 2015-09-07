@@ -1,70 +1,3 @@
-@media all and (max-width: 1200px){
-
-#g-standing {
-
-	display:none;
-
-	visibility:hidden;
-
-}
-.left-take {
-display:none;
-visibility:hidden;
-}
-
-.right-take {
-display:none;
-visibility:hidden;
-}
-
-.skyscapper-en-left{display:none;
-visibility:hidden;}
-
-
-#bubbles {
-
-  background: none repeat scroll 0 0 transparent;
-
-  border: 0 none;
-
-  border-radius: 0 0 0 0;
-
-  float: none;
-
-  margin-bottom: 0;
-
-  padding: 0;
-
-  position: relative;
-
-}
-
-#bubbles img.corner {
-
-	display:none;
-
-	visibility:hidden;
-
-}
-
-.gtext {
-
-	display:none;
-
-	visibility:hidden;
-
-}
-
-.gtext .corner {
-
-	display:none;
-
-	visibility:hidden;
-
-}
-
-}
-
 @media all and (max-width: 980px){
 .wrapper {
   max-width: 100%;
@@ -73,10 +6,6 @@ visibility:hidden;}
   margin: 0 auto;
   max-width: 100%;
 }
-#bubbles {
-  margin-bottom: 10px;
-}
-.page-pusher{display:none;visibility:hidden;}
 }
 @media all and (max-width: 768px){
 #block-nice-menus-1{display:none;visibility:hidden;}
@@ -84,53 +13,10 @@ visibility:hidden;}
   display:inherit;
   visibility:visible;
 }
-.premium-companies-slider .jcarousel-skin-tango .jcarousel-container-horizontal{width:100%;}
-.premium-companies-slider .jcarousel-skin-tango .jcarousel-clip-horizontal{width:100%;}
-
-#left_col {
-  margin-right: 0px;
-  width: 100%;
+#top-bar .collect a {
+  margin: 0 0 0 2px;
+  padding: 5px 10px;
 }
-#sidebar, #deals-sidebar {
-/*  margin-top: 10px;
-  max-width: none;
-  padding: 0 1%;
-  width: 98%;*/
-  display:none;
-  visibility:hidden;
-}
-
-#nice-menu-1 li.menuparent {
-  background: none no-repeat scroll right 0 transparent;
-}
-#nice-menu-1 li a {
-  font-size: 13px;
-  padding: 4px 0;
-}
-#nice-menu-1 li.menu-23800 a {
-  background: none repeat scroll 0 0 transparent;
-  padding: 4px 0;
-}
-ul.nice-menu-down li:last-child ul {
-  right: 0;
-  left: auto;
-}
-
-.header-col-one .leader-board {
-  clear: both;
-  float: none;
-  text-align: center;
-}
-#search .form-text {
-  padding-left: 2%;
-  width: 51%;
-}
-.companies-flags .row .image img {
-  height: auto;
-  width: 100%;
-}
-
-.service-links{width:auto;}
 .footer_item {
   margin-right: 1.3%;
   padding-right: 1.3%;
@@ -141,196 +27,69 @@ ul.nice-menu-down li:last-child ul {
   margin-bottom: 10px;
   width: 100%;
 }
-#follow {
-  margin-bottom: 5px;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  margin-top: 5px !important;
-  width: 100%;
+#lang {
+  margin: 5px 0 0;
 }
-.jcarousel-skin-tango .jcarousel-container-horizontal {
-  width: 100%;
+.home-action-butons {
+  display: none;
+	visibility: hidden;
 }
-.jcarousel-skin-tango .jcarousel-clip-horizontal {
-  width: 100%;
-}
-.jcarousel-skin-tango .jcarousel-item .image {
-  width: 100%;
-}
-.jcarousel-skin-tango .jcarousel-item .image img {
-  width: 100%;
-  height:auto;
-}
-#slider .slide-info {
-  left: 0;
-  top: 55%;
-  width:100%;
-}
-.front-deals li {
-  margin-right: 3.68%;
-  width: 17%;
-}
-.front-deals li img {
-  width: 100%;
-}
-.front-deals li .cover {
-  padding: 4.2%;
-}
-#news, #front-deals {
-  width: 48.5%;
-  padding-right:1.4%;
-}
-#tips, #front-websites {
-  width: 48.5%;
-  padding-left:1.4%;
-}
-.videos-front .row {
-margin-right: 3.68%;
-width: 17%;
-}
-.videos-front .row:last-child{margin-right:0;}
-#video_gallery_front li img {
-  width: 100%;
-  height:auto;
-  padding:0;
-}
-.tool_item {
-  margin-right: 1.5%;
-  padding-right: 2%;
-  width: 17%;
-}
-.tool_item img{width:50%}
-.front-albums ul li {
-  margin-right: 3.68%;
-  width: 17%;
-}
-.front-albums ul li img{
-	width:100%;
-}
-.front-flags .row {
-  margin-right:0;
-}
-
-
-#news .views-row-1 .image, #tips .views-row-1 .image, #front-deals .views-row-1 .image, #front-websites .views-row-1 .image {
-   width: 36.3%;
-}
-#news .views-row-1 .image img, #tips .views-row-1 .image img, #front-deals .views-row-1 .image img, #front-websites .views-row-1 .image img{
-  width:100%;
-  height:auto;
-}
-#news .views-row-2 .image, #tips .views-row-2 .image, #front-deals .views-row-2 .image, #front-websites .views-row-2 .image {
-   width: 36.3%;
-}
-#news .views-row-2 .image img, #tips .views-row-2 .image img, #front-deals .views-row-2 .image img, #front-websites .views-row-2 .image img{
-  width:100%;
-   height:auto;
-}
-.tips-terms .row, .deals-terms .row {
-  margin-right: 0.6%;
-  width: 19.4%;
-}
-.tips-terms .row img, .deals-terms .row img{width:100%;height:auto;}
-.albums-terms ul li {
-  width: 99%;
-}
-.compnaies .row {
-  width: 100%;
-}
-
-#inner .inner-row .articles {
-  margin-right: 0;
-  margin-bottom:20px;
-  width: 98% !important;
-}
-#inner .inner-row .killer {
-  float: none;
-  text-align: center;
-  width: auto;
-}
-#inner .inner-row .col-1-3rd {
-  float: none;
-  margin-bottom: 20px;
-  margin-right: 0;
-  min-height: 237px;
-  width: 98%;
-}
-#inner .inner-timeline #map1 {
-  width: 100%;
-}
-#inner .inner-timeline #map2 {
-  width: 100%;
-}
-.front-timeline img {
+.search-box {
   float: left;
+  margin-top: 0;
+}
+#new-gallery {
+  margin-left: 0;
+  margin-right: 0;
+}
+#inner .inner-row .sidebar {
+  float: none;
   width: 100%;
 }
-
-.popular-slider .jcarousel-skin-default .jcarousel-container-horizontal {
+.killer {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  text-align: center;
   width: 100%;
-  padding:2px;
 }
-.popular-slider .image img{
-
+.celebrity-list-data {
+  margin: 15px 0 15px 0;
 }
-
-
+.related-items .title {
+  font-size: 24px;
+}
+.internal-tabs ul li {
+  width: 100%;
+}
+#main_menu {
+  float: none;
+  width: 100%;
+}
 }
 
 @media all and (max-width: 685px){
 	
 img { max-width: 100%; height:auto;}
-
-.contest-voting .row {
-border:0;
-}
-
-#nice-menu-1 li {
-  padding: 2px 1px;
-}
-#nice-menu-1 li a {
-  font-size: 12px;
-}	
-.call-to-action {
-  width: 96px;
-}
-
-.leader-board {
+.leader-board, .content-leaderboard {
   display: none;
   visibility:hidden;
 }
-.header-col-one .l{
-  display: inherit;
-  visibility:visible;
+.search-box {
+  margin-top: 15px;
 }
-
-.page-user-tools-wedding-checklist .views-table tr td.views-field-field-wchklist-cat-ref{display:none;visibility:hidden;}
-.page-user-tools-wedding-checklist .views-table tr th.views-field-field-wchklist-cat-ref{display:none;visibility:hidden;}
-.chklst-summary .summary-box {
-  font-size: 14px;
+.intro {
+  width: auto;
 }
-#killer-banner {margin:15px auto 0;text-align:center;}
-.header-col-two .logo_intro{width:100%;}
-.header-col-two .user-call-links{width:40%;}
-.header-col-two #search{width:56%;margin-top:14px;}
-#user-icons .icon{border:none;}
-
-#slider {
-	width:100%;
+.intro-text {
+  width: 100%;
 }
-.mobile-ad{display:inherit;visibility:visible;}	
-
-.page-user-tools-wedding-checklist .views-table tr .views-field-nid-1 {
-  width: 25%;
+.front-killer {
+	float: none;
+  text-align: center;
+  width: 100%;
 }
-.page-user-tools-wedding-checklist .views-table tr td.views-field-field-wchklist-task {
-  width: 65%;
+.categories .row {
+  width: 100%;
 }
-.page-user-tools-wedding-checklist .views-table tr td.views-field-ops {
-  width: 10%;
-}
-
-
 }
 
 @media all and (max-width: 568px){
